@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+# Credentials
+*.pem
+*.key
+*credentials*
+*secrets*
+# Docker and databases
+*.db
+*.sqlite
+*.sqlite3
+*.dump
+*.backup
+postgres_data/
+# Temporary files
+*.log
+*.tmp
+Thumbs.db
+.DS_Store
+# IDE
+.vscode/
+.idea/

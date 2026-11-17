@@ -1,0 +1,122 @@
+{
+  "run_id": "dq_20261028_143440_utc",
+  "source_run_id": "run_20261028_143440_utc",
+  "started_at_utc": "2026-10-28T14:45:04.460554+00:00",
+  "completed_at_utc": "2026-10-28T14:45:09.242770+00:00",
+  "accepted_by_table": {
+    "products": 6,
+    "customers": 751,
+    "orders": 5001,
+    "order_items": 8477,
+    "store_events": 30008
+  },
+  "accepted_records": 44243,
+  "rejected_records": 0,
+  "checks": [
+    {
+      "table_name": "products",
+      "check_name": "sha256_checksum",
+      "passed": true,
+      "failed_rows": 0,
+      "details": "Raw file matches manifest"
+    },
+    {
+      "table_name": "products",
+      "check_name": "manifest_row_count",
+      "passed": true,
+      "failed_rows": 0,
+      "details": "Manifest=6; CSV=6"
+    },
+    {
+      "table_name": "products",
+      "check_name": "validation_rejections",
+      "passed": true,
+      "failed_rows": 0,
+      "details": "Accepted=6"
+    },
+    {
+      "table_name": "customers",
+      "check_name": "sha256_checksum",
+      "passed": true,
+      "failed_rows": 0,
+      "details": "Raw file matches manifest"
+    },
+    {
+      "table_name": "customers",
+      "check_name": "manifest_row_count",
+      "passed": true,
+      "failed_rows": 0,
+      "details": "Manifest=751; CSV=751"
+    },
+    {
+      "table_name": "customers",
+      "check_name": "validation_rejections",
+      "passed": true,
+      "failed_rows": 0,
+      "details": "Accepted=751"
+    },
+    {
+      "table_name": "orders",
+      "check_name": "sha256_checksum",
+      "passed": true,
+      "failed_rows": 0,
+      "details": "Raw file matches manifest"
+    },
+    {
+      "table_name": "orders",
+      "check_name": "manifest_row_count",
+      "passed": true,
+      "failed_rows": 0,
+      "details": "Manifest=5001; CSV=5001"
+    },
+    {
+      "table_name": "orders",
+      "check_name": "validation_rejections",
+      "passed": true,
+      "failed_rows": 0,
+      "details": "Accepted=5001"
+    },
+    {
+      "table_name": "order_items",
+      "check_name": "sha256_checksum",
+      "passed": true,
+      "failed_rows": 0,
+      "details": "Raw file matches manifest"
+    },
+    {
+      "table_name": "order_items",
+      "check_name": "manifest_row_count",
+      "passed": true,
+      "failed_rows": 0,
+      "details": "Manifest=8477; CSV=8477"
+    },
+    {
+      "table_name": "order_items",
+      "check_name": "validation_rejections",
+      "passed": true,
+      "failed_rows": 0,
+      "details": "Accepted=8477"
+    },
+    {
+      "table_name": "store_events",
+      "check_name": "sha256_checksum",
+      "passed": true,
+      "failed_rows": 0,
+      "details": "Raw file matches manifest"
+    },
+    {
+      "table_name": "store_events",
+      "check_name": "manifest_row_count",
+      "passed": true,
+      "failed_rows": 0,
+      "details": "Manifest=30008; CSV=30008"
+    },
+    {
+      "table_name": "store_events",
+      "check_name": "validation_rejections",
+      "passed": true,
+      "failed_rows": 0,
+      "details": "Accepted=30008"
+    }
+  ]
+}

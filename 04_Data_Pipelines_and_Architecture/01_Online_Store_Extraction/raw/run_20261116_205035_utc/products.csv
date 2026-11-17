@@ -1,0 +1,7 @@
+id,name,category,style,price,size,badge,description,active
+RB-101,Hudson Valley Lager,Beer,Crisp lager,13.99,6 pack,Local,"Clean, bright, and brewed for relaxed afternoons.",True
+RB-102,North Country IPA,Beer,Hazy IPA,15.99,4 pack,Popular,"Juicy citrus notes with a smooth, balanced finish.",True
+RB-201,Finger Lakes Riesling,Wine,Semi-dry white,18.50,750 ml,Staff pick,"Fresh stone fruit, bright acidity, and a clean finish.",True
+RB-202,Catskill Cabernet,Wine,Dry red,24.00,750 ml,New,"Dark fruit, gentle oak, and a long dinner-friendly finish.",True
+RB-301,Albany Small Batch Gin,Spirits,Botanical gin,31.99,750 ml,Small batch,"Juniper, citrus peel, and a subtle herbal character.",True
+RB-401,Orchard Sparkler,Nonalcoholic,Sparkling apple,8.99,4 pack,0.0%,A lively alcohol-free option with crisp orchard flavor.,True

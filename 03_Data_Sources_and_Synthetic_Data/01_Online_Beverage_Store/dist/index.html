@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Riverbend Beverage Company demonstration storefront and analytics data source." />
+  <title>Riverbend Beverage Company</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="ageGate" class="age-gate">
+    <div class="age-card">
+      <span class="eyebrow">Riverbend Beverage Company</span>
+      <h1>Welcome to Riverbend</h1>
+      <p>This fictional storefront demonstrates how a beverage retailer generates data for analytics. You must be 21 or older to enter.</p>
+      <div class="age-actions">
+        <button id="ageYes" class="button button-primary">I am 21 or older</button>
+        <button id="ageNo" class="button button-secondary">I am under 21</button>
+      </div>
+      <small>Demo only. No products or payments are real.</small>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Riverbend home">
+      <span class="brand-mark">R</span>
+      <span><strong>Riverbend</strong><small>Beverage Company</small></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#shop">Shop</a>
+      <a href="#story">Our Story</a>
+      <a href="#data">Demo Data</a>
+    </nav>
+    <button id="cartButton" class="cart-button" aria-label="Open shopping cart">
+      Cart <span id="cartCount">0</span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">Capital Region selections</span>
+        <h1>Good drinks.<br>Better gatherings.</h1>
+        <p>Explore a curated collection for dinner tables, celebrations, and quiet weekends. Every interaction also powers our fictional analytics story.</p>
+        <a class="button button-primary" href="#shop">Browse the collection</a>
+      </div>
+      <div class="hero-art" aria-label="Decorative beverage display">
+        <div class="sun"></div>
+        <div class="bottle bottle-one"></div>
+        <div class="bottle bottle-two"></div>
+        <div class="glass"></div>
+        <p>Seasonal<br><strong>favorites</strong></p>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Store benefits">
+      <div><strong>Local pickup</strong><span>Ready in two hours</span></div>
+      <div><strong>Curated selection</strong><span>Chosen for every occasion</span></div>
+      <div><strong>Riverbend Rewards</strong><span>Earn points on demo orders</span></div>
+    </section>
+
+    <section id="shop" class="shop-section">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">Shop Riverbend</span>
+          <h2>Featured collection</h2>
+        </div>
+        <label class="search-box">
+          <span>Search</span>
+          <input id="searchInput" type="search" placeholder="Try lager or sparkling" />
+        </label>
+      </div>
+      <div id="categoryFilters" class="filters" aria-label="Product categories"></div>
+      <div id="productGrid" class="product-grid"></div>
+    </section>
+
+    <section id="story" class="story-section">
+      <div class="story-number">01</div>
+      <div>
+        <span class="eyebrow">The company story</span>
+        <h2>One storefront, many business questions</h2>
+      </div>
+      <p>Riverbend operates physical stores, an online shop, a warehouse, and a loyalty program. Transactions from this demo become the raw material for sales, marketing, inventory, and forecasting analysis.</p>
+    </section>
+
+    <section id="data" class="data-section">
+      <div>
+        <span class="eyebrow">Presentation mode</span>
+        <h2>See the data this store creates</h2>
+        <p>Product views, cart activity, promotion attempts, checkout events, and completed orders are stored in your browser for the demonstration.</p>
+      </div>
+      <div class="data-actions">
+        <button id="downloadEvents" class="button button-primary">Download event data</button>
+        <button id="clearEvents" class="button button-secondary">Reset demo data</button>
+        <span id="eventCount">0 events recorded</span>
+      </div>
+    </section>
+  </main>
+
+  <aside id="cartDrawer" class="cart-drawer" aria-hidden="true">
+    <div class="cart-header">
+      <div><span class="eyebrow">Your order</span><h2>Shopping cart</h2></div>
+      <button id="closeCart" class="icon-button" aria-label="Close cart">×</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="promo-row">
+      <input id="promoInput" type="text" placeholder="Promotion code" />
+      <button id="applyPromo" class="button button-secondary">Apply</button>
+    </div>
+    <p id="promoMessage" class="promo-message"></p>
+    <div class="cart-total"><span>Total</span><strong id="cartTotal">$0.00</strong></div>
+    <button id="checkoutButton" class="button button-primary checkout-button">Continue to checkout</button>
+  </aside>
+  <div id="drawerOverlay" class="drawer-overlay"></div>
+
+  <dialog id="checkoutDialog" class="checkout-dialog">
+    <form id="checkoutForm" method="dialog">
+      <div class="dialog-heading">
+        <div><span class="eyebrow">Secure demo checkout</span><h2>Complete your order</h2></div>
+        <button id="closeCheckout" type="button" class="icon-button" aria-label="Close checkout">×</button>
+      </div>
+      <div class="form-grid">
+        <label>Full name<input name="name" required placeholder="Jordan Rivera" /></label>
+        <label>Email<input name="email" type="email" required placeholder="jordan@example.com" /></label>
+        <label>Fulfillment<select name="fulfillment"><option value="pickup">Store pickup</option><option value="delivery">Local delivery</option></select></label>
+        <label>Preferred store<select name="store"><option>Albany</option><option>Troy</option><option>Schenectady</option></select></label>
+        <label class="full-width checkbox-label"><input name="loyalty" type="checkbox" /> Join Riverbend Rewards</label>
+        <label class="full-width checkbox-label"><input name="ageConfirmed" type="checkbox" required /> I confirm that I am at least 21 years old</label>
+      </div>
+      <div class="demo-payment">Payment simulation only. No card information is collected.</div>
+      <button class="button button-primary checkout-button" type="submit">Place demo order</button>
+    </form>
+  </dialog>
+
+  <dialog id="successDialog" class="success-dialog">
+    <span class="success-check">✓</span>
+    <span class="eyebrow">Order confirmed</span>
+    <h2>Thanks for shopping Riverbend</h2>
+    <p id="successMessage"></p>
+    <button id="closeSuccess" class="button button-primary">Continue shopping</button>
+  </dialog>
+
+  <footer>
+    <span>Riverbend Beverage Company</span>
+    <span>Fictional business created for an analytics presentation</span>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

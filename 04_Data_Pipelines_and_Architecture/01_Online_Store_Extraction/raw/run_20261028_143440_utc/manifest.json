@@ -1,0 +1,46 @@
+{
+  "pipeline": "online_store_operational_extract",
+  "source": "riverbend_postgresql",
+  "run_id": "run_20261028_143440_utc",
+  "extracted_at_utc": "2026-10-28T14:34:40.935707+00:00",
+  "status": "succeeded",
+  "files": [
+    {
+      "table": "products",
+      "file": "products.csv",
+      "rows": 6,
+      "bytes": 828,
+      "sha256": "dc876f5ec449c23bf07700bcdcc54ab6880863b1e3adbb8b3c73e18a6fb77979"
+    },
+    {
+      "table": "customers",
+      "file": "customers.csv",
+      "rows": 751,
+      "bytes": 60391,
+      "sha256": "f2545fe6e44ec0ba5955804c47b4267412e920458d67eb5c1a034ef88fb6a116"
+    },
+    {
+      "table": "orders",
+      "file": "orders.csv",
+      "rows": 5001,
+      "bytes": 451203,
+      "sha256": "ee26a8712ff9bfdb4d429781831c1ab4a4b789edc39de895947923af1d32812d"
+    },
+    {
+      "table": "order_items",
+      "file": "order_items.csv",
+      "rows": 8477,
+      "bytes": 434171,
+      "sha256": "5a9126db1c4f711b2e1abde1c3874615cdadcce7293d9195b58576507c6e5a81"
+    },
+    {
+      "table": "store_events",
+      "file": "store_events.csv",
+      "rows": 30008,
+      "bytes": 7192673,
+      "sha256": "9a1b92e01328d1ba7f028e23ec368b1f659c5ecb81c051b25329c65262c38a6c"
+    }
+  ],
+  "total_rows": 44243,
+  "completed_at_utc": "2026-10-28T14:34:43.837075+00:00"
+}
