@@ -44,3 +44,5 @@ Use the promotion code `SUMMER10` during the demonstration.
 ## Important data note
 
 All company names, customers, orders, transactions, and business results in this project are fictitious or synthetic. The project does not process real payments.
+# riverbend-end-to-end-data-analytics
+An end-to-end data analytics demonstration featuring synthetic beverage sales data, Docker, PostgreSQL, Python, Power BI, and predictive analytics. Presented at the Capital Area SQL Server User Group (CASSUG).
